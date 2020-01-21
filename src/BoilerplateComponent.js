@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ChildComponent from "./ChildComponent";
+import "./styles/styles.scss";
 
 const propTypes = {
   label: PropTypes.string.isRequired,
@@ -11,7 +13,7 @@ const defaultProps = {
   styles: {
     label: {
       fontFamily: "Comic Sans MS",
-      color: "green"
+      color: "purple"
     },
     input: {
       background: "#ddd",
@@ -31,6 +33,7 @@ const BoilerplateComponent = props => {
     <div>
       <label style={styles.label}>{props.label}</label>
       <input type="text" style={styles.input} onChange={handleChange} />
+      <ChildComponent />
     </div>
   );
 };

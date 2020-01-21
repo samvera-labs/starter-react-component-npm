@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import BoilerplateComponent from "jw-react-npm-boilerplate";
+import BoilerplateComponent from "componentSourceFiles/BoilerplateComponent";
 
 render(
   <div>
