@@ -1,7 +1,7 @@
 {
-  "name": "jw-react-npm-boilerplate-demo",
+  "name": "starter-react-component-npm-demo",
   "version": "1.0.0",
-  "description": "React Boilerplate Component Demo",
+  "description": "Starter React Component NPM Demo environment which pulls in the source component locally for live development.",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
