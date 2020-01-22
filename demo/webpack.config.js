@@ -33,7 +33,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      componentSourceFiles: path.resolve(__dirname, "../src")
+      componentSourceFiles: path.resolve(__dirname, "../src"),
+      // For local testing, resolve to only one copy of React, otherwise
+      // will get invariant errors when using React hooks
+      // https://github.com/facebook/react/issues/15315
+      react: path.resolve("./node_modules/react")
     },
     extensions: [".js", ".jsx"]
   },

@@ -102,32 +102,6 @@ This will output bundled files in the `/lib` folder.
 Here's how to publishing your package to NPM:
 https://docs.npmjs.com/cli/publish
 
-### Import a local copy first?
-
-Before pushing to NPM you may want to test your component locally.
-
-From within the root directory of wherever `starter-react-component-npm` lives on your computer, run
-
-```
-pwd
-```
-
-and copy the file path to your clipboard. From within any React application running locally, import the local file:
-
-```
-yarn add file:/the-path-you-just-copied-here
-```
-
-Then import the component into your project as usual and make sure all is well.
-
-```
-@import CompoentToExport from "starter-react-component-npm";
-
-...
-
-<ComponentToExport />
-```
-
 ### Coding style
 
 There is a `.prettierrc.js` file with project coding style settings.
@@ -152,6 +126,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-This repo was originally forked and heavily influenced by https://github.com/cornflourblue/jw-react-npm-boilerplate
+This repo was heavily influenced a great deal by:
 
-And the tutorial found at: http://jasonwatmore.com/post/2018/04/14/react-npm-how-to-publish-a-react-component-to-npm
+- https://github.com/cornflourblue/jw-react-npm-boilerplate
+- https://itnext.io/how-to-package-your-react-component-for-distribution-via-npm-d32d4bf71b4f
+- http://jasonwatmore.com/post/2018/04/14/react-npm-how-to-publish-a-react-component-to-npm
+
+Thanks for sharing your ideas!
