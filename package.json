@@ -61,6 +61,6 @@
     "not ie 11",
     "not op_mini all"
   ],
-  "homepage": "https://adamjarling.github.io/starter-react-component-npm/styleguide/",
+  "homepage": "https://adamjarling.github.io/starter-react-component-npm/",
   "repository": "git@github.com:adamjarling/starter-react-component-npm.git"
 }
