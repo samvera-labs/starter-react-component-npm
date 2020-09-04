@@ -4,7 +4,7 @@ A React component library boilerplate which:
 
 - includes React,
 - bundles CommonJS, UMD and ESModule JavaScript files,
-- provides a Styleguidist dev environment &amp; component documentation,
+- provides a Styleguidist dev environment &amp; [component documentation](https://samvera-labs.github.io/starter-react-component-npm/styleguide/),
 - provides unit test, best practice configuration
 - supports styled components (CSS) via @emotion.
 
@@ -40,6 +40,25 @@ yarn styleguide
 
 which will spin up a local Styleguidist webpack dev server that handles live-reloading as you write tests, build out components, and write documentation.
 
+## Documentation
+
+Styleguidist generates documentation through markdown files (`.md`) which you'll create, and which live alongside component `.js` files and `.test.js` files in a component's folder. For example:
+
+```
+Button/
+  Button.js
+  Button.test.js
+  Button.md
+```
+
+To directly build the latest version of the style guide:
+
+```
+yarn styleguide:build
+```
+
+Which is available at: https://samvera-labs.github.io/starter-react-component-npm/styleguide/
+
 ## Tests
 
 Unit tests are set up to run using [Jest](https://jestjs.io/) and [@testing-library](https://testing-library.com/).
@@ -59,10 +78,13 @@ To build the package, we use [Rollup](https://rollupjs.org/):
 yarn build
 ```
 
-To directly build the latest version of the style guide:
+Any components you want to export, place them in this file:
 
 ```
-yarn styleguide:build
+// src/main.js
+
+export { default as SomeComponent } from "./components/SomeComponent/SomeComponent.js";
+export { default as AnotherComponent } from "./components/AnotherComponent/AnotherComponent.js";
 ```
 
 ## Customizing
