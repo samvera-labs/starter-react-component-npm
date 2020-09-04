@@ -61,6 +61,6 @@
     "not ie 11",
     "not op_mini all"
   ],
-  "homepage": "https://adamjarling.github.io/starter-react-component-npm/",
-  "repository": "git@github.com:adamjarling/starter-react-component-npm.git"
+  "homepage": "https://samvera-labs.github.io/starter-react-component-npm/styleguide",
+  "repository": "git@github.com:samvera-labs/starter-react-component-npm.git"
 }

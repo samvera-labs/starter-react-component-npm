@@ -15,7 +15,7 @@ A React component library boilerplate which:
 Clone or fork the repository:
 
 ```
-git clone git@github.com:adamjarling/starter-react-component-npm.git
+git clone git@github.com:samvera-labs/starter-react-component-npm.git
 ```
 
 Install dependencies (use Yarn or NPM...your choice but examples below use `yarn`)
@@ -93,6 +93,10 @@ To publish your package:
 ```
 npm publish
 ```
+
+## Authors
+
+- **Adam J. Arling** - _UI Developer_ - [Northwestern Univeristy Libraries](https://github.com/nulib) [Github](https://github.com/adamjarling)
 
 ## Built With
 
