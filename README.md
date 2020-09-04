@@ -1,6 +1,12 @@
 # starter-react-component-npm
 
-A React component library boilerplate which includes React, CommonJS, UMD and ESModule bundling, a Styleguidist dev environment &amp; documentation, unit tests and CSS styled components support (via @emotion).
+A React component library boilerplate which:
+
+- includes React,
+- bundles CommonJS, UMD and ESModule JavaScript files,
+- provides a Styleguidist dev environment &amp; component documentation,
+- provides unit test, best practice configuration
+- supports styled components (CSS) via @emotion.
 
 ## Getting Started
 
@@ -12,11 +18,13 @@ Clone or fork the repository:
 git clone git@github.com:adamjarling/starter-react-component-npm.git
 ```
 
-Install dependencies
+Install dependencies (use Yarn or NPM...your choice but examples below use `yarn`)
 
 ```
 # Yarn
 yarn install
+
+// or...
 
 # NPM
 npm install
