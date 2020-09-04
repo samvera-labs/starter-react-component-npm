@@ -1,78 +1,60 @@
 # starter-react-component-npm
 
-Starter configuration for a project which handles development and npm packaging of a React app exported as a React component.
-
-## Goals
-
-This boilerplate repository aims to be a single repository which is both a development environment, and offers `npm` packaging capabilities.
+A React component library boilerplate which includes React, CommonJS, UMD and ESModule bundling, a Styleguidist dev environment &amp; documentation, unit tests and CSS styled components support (via @emotion).
 
 ## Getting Started
 
-Note there are two environments, a bundling and development environent, each with their own `package.json` and `webpack.config.js` files.
-
-### Prerequisites
-
-You'll need to have `node` installed on your local machine. Also, preferably `yarn` (as a wrapper for npm commands) installed as well. You can check either with:
-
-```
-node --version
-yarn --version
-```
-
 ### Installing
 
-1. Clone or fork this repository
+Clone or fork the repository:
 
 ```
 git clone git@github.com:adamjarling/starter-react-component-npm.git
 ```
 
-2. Install root level, packaging dependencies
+Install dependencies
 
 ```
+# Yarn
 yarn install
+
+# NPM
+npm install
 ```
 
-3. Install development environment dependencies
+## Developing
+
+Use [Styleguidist](https://react-styleguidist.js.org/) as the development environment.
 
 ```
-cd demo
-yarn install
+yarn styleguide
 ```
 
-## Development
+which will spin up a local Styleguidist webpack dev server that handles live-reloading as you write tests, build out components, and write documentation.
 
-Develop your component or collection of components in the root level `/src` directory.
+## Tests
 
-The `/demo` directory is a convenience directory mocking a consuming application for your component. View `/demo/src/index.js` to see how the demo is `@import`ing your new component.
-
-### Running the demo
-
-From within `/demo`, run
-
-`yarn start`
-
-and the demo app will load in the browser. Any changes made to component files in `/src`, ie. `/src/ComponentToExport.js` will live reload in the browser.
-
-### Caveat
-
-Keep in mind the `/demo` directory is a convenience to developing your _unbundled_ component. By default, it's not importing a webpack bundled, commonjs file (which your exported component will eventually become).
-
-While developing against your local component, if you want to use CSS or Sass or anything which requires a webpack loader, you'll need to use those same webpack loaders in the `/demo` environment. Note the `module.rules` definitions in both `webpack.config.js` and `/demo/webpack.config.js`.
-
-If you want to adjust your `/demo` environment to test your fully bundled component, then run
-
-`yarn add my-new-component`, and import your component directly from `/node_modules` instead of the relative import.
-
-### Example usage
+Unit tests are set up to run using [Jest](https://jestjs.io/) and [@testing-library](https://testing-library.com/).
 
 ```
-const props = {
-  someProp: 'I am the value for some prop',
-  anotherProp: 123456789,
-};
+yarn test
 
-<ComponentToExport {...props} />
+// or
+yarn test:watch
+```
+
+## Building the package
+
+To build the package, we use [Rollup](https://rollupjs.org/):
+
+```
+yarn build
+```
+
+To directly build the latest version of the style guide:
+
+```
+yarn styleguide:build
 ```
 
 ## Customizing
@@ -81,30 +63,28 @@ const props = {
 
 2. Update the `/package.json` file to customize for your project. Especially `namme, description, keywords, author`, etc.
 
-3. Rename your top-level component something different than `ComponentToExport`
-
-4. Update `/webpack.config.js` to reflect your new component name in the `entry` and `output.filename` fields.
-
 ## Deployment
 
 ### Bundling
 
-When ready to bundle your component, from within the project root directory, run:
+When ready to bundle your component, run:
 
 ```
 yarn build
 ```
 
-This will output bundled files in the `/lib` folder.
+This will build a fresh copies of the package in the `/dist` folder. It will also build a fresh copy of the style guide in the `/styleguide` directory.
 
 ### Push to NPM registry
 
 Here's how to publishing your package to NPM:
 https://docs.npmjs.com/cli/publish
 
-### Coding style
+To publish your package:
 
-There is a `.prettierrc.js` file with project coding style settings.
+```
+npm publish
+```
 
 ## Built With
 
