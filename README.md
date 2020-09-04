@@ -89,27 +89,10 @@ npm publish
 ## Built With
 
 - [React](https://reactjs.org/) - JavaScript component library
-- [Webpack](https://webpack.js.org/) - Webpack JavaScript bundler
+- [Rollup](https://rollupjs.org/) - Rollup JavaScript bundler
 - [Jest](https://jestjs.io/) - Testing framework
-
-## Contributing
-
-Please read [CONTRIBUTING.md](contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your-name-or-organization/your-repository-name/tags).
+- [Styleguidist](https://react-styleguidist.js.org/) - Local dev environment &amp; documentation
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-This repo was heavily influenced a great deal by:
-
-- https://github.com/cornflourblue/jw-react-npm-boilerplate
-- https://itnext.io/how-to-package-your-react-component-for-distribution-via-npm-d32d4bf71b4f
-- http://jasonwatmore.com/post/2018/04/14/react-npm-how-to-publish-a-react-component-to-npm
-
-Thanks for sharing your ideas!
