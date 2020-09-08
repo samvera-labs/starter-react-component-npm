@@ -12,20 +12,22 @@ A React component library boilerplate which:
 
 ### Installing
 
-Clone or fork the repository:
+1. Clone or fork the repository:
 
 ```
 git clone git@github.com:samvera-labs/starter-react-component-npm.git
 ```
 
-Remove boilerplate `/.git` folder:
+2. Rename the cloned folder to your new project's title (ie. something other than `starter-react-component-npm`). Also update the `name` value in the `package.json` file.
+
+3. Remove boilerplate `/.git` folder. If you want to do so via command line, run:
 
 ```
-chmod -R +w .git
+chmod -R +w .git // needed to be able to delete the folder from command line
 rm -r .git
 ```
 
-Install dependencies (use Yarn or NPM...your choice but examples below use `yarn`)
+4. Install dependencies (use Yarn or NPM...your choice but examples below use `yarn`)
 
 ```
 # Yarn
@@ -37,7 +39,7 @@ yarn install
 npm install
 ```
 
-Start with a fresh Git history
+5. Start with a fresh Git history
 
 ```
 git add .
