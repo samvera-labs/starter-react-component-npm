@@ -18,6 +18,13 @@ Clone or fork the repository:
 git clone git@github.com:samvera-labs/starter-react-component-npm.git
 ```
 
+Remove boilerplate `/.git` folder:
+
+```
+chmod -R +w .git
+rm -r .git
+```
+
 Install dependencies (use Yarn or NPM...your choice but examples below use `yarn`)
 
 ```
@@ -28,6 +35,13 @@ yarn install
 
 # NPM
 npm install
+```
+
+Start with a fresh Git history
+
+```
+git add .
+git commit -m "Initial commit"
 ```
 
 ## Developing
